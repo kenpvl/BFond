@@ -1,4 +1,4 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 
 import java.sql.Connection;
@@ -9,9 +9,9 @@ import java.sql.Statement;
 import javax.swing.*;
 
 public class Udalenie extends JFrame {
-	private JButton button = new JButton("Выполнить");
+	private JButton button = new JButton("Р’С‹РїРѕР»РЅРёС‚СЊ");
 	private JTextField input = new JTextField("", 5);
-	private JLabel label1 = new JLabel("  Введите идентификатор издания:");
+	private JLabel label1 = new JLabel("  Р’РІРµРґРёС‚Рµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РёР·РґР°РЅРёСЏ:");
         
     public static int idd;
     public static int y=0;
@@ -19,7 +19,7 @@ public class Udalenie extends JFrame {
         
 	
 	public Udalenie() {
-	    super("Удаление выбранного издания");
+	    super("РЈРґР°Р»РµРЅРёРµ РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ");
 	    this.setBounds(400,100,500,500);
 	   
 
@@ -128,8 +128,8 @@ public class Udalenie extends JFrame {
                 
                 public void actionPerformed(ActionEvent e) {
 			
-			String mess3="Такого идентификатора не существует!";
-                        String mes = "Издание удалено!";
+			String mess3="РўР°РєРѕРіРѕ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!";
+                        String mes = "РР·РґР°РЅРёРµ СѓРґР°Р»РµРЅРѕ!";
                         String message="";
 			
                         message = input.getText();
@@ -150,7 +150,7 @@ public class Udalenie extends JFrame {
                     
                         JOptionPane.showMessageDialog(null,
                                 mess3,
-                                "Сообщение",
+                                "РЎРѕРѕР±С‰РµРЅРёРµ",
                             JOptionPane.PLAIN_MESSAGE);
                     
                     }
@@ -163,7 +163,7 @@ public class Udalenie extends JFrame {
                         
                         JOptionPane.showMessageDialog(null,
 		    		mes,
-		    		"Сообщение",
+		    		"РЎРѕРѕР±С‰РµРЅРёРµ",
 		    	    JOptionPane.PLAIN_MESSAGE);
 		}
 	}
