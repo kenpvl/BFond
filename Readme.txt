@@ -1,2 +1,2 @@
-﻿Fond999.jar - исполняемый бинарник 999
+﻿Fond999.jar - исполняемый бинарник
 AppFond.java - main class
