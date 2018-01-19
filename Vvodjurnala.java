@@ -1,4 +1,4 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 
 import java.sql.Connection;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import javax.swing.*;
 
 public class Vvodjurnala extends JFrame {
-	private JButton button = new JButton("Добавить");
+	private JButton button = new JButton("Р”РѕР±Р°РІРёС‚СЊ");
 	private JTextField input1 = new JTextField("", 5);
     private JTextField input2 = new JTextField("", 5);
     private JTextField input3 = new JTextField("", 5);
@@ -19,14 +19,14 @@ public class Vvodjurnala extends JFrame {
     
         
         
-        private JLabel label1 = new JLabel("  Заполните следующие поля:");
+        private JLabel label1 = new JLabel("  Р—Р°РїРѕР»РЅРёС‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РїРѕР»СЏ:");
     
-    private JLabel label2 = new JLabel("    Наименование журнала");
-    private JLabel label3 = new JLabel("    Год и месяц издательства");
-    private JLabel label4 = new JLabel("    Количество страниц");
-    private JLabel label5 = new JLabel("    Издательство");
+    private JLabel label2 = new JLabel("    РќР°РёРјРµРЅРѕРІР°РЅРёРµ Р¶СѓСЂРЅР°Р»Р°");
+    private JLabel label3 = new JLabel("    Р“РѕРґ Рё РјРµСЃСЏС† РёР·РґР°С‚РµР»СЊСЃС‚РІР°");
+    private JLabel label4 = new JLabel("    РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†");
+    private JLabel label5 = new JLabel("    РР·РґР°С‚РµР»СЊСЃС‚РІРѕ");
     
-    private JLabel label6 = new JLabel("    Список статей");
+    private JLabel label6 = new JLabel("    РЎРїРёСЃРѕРє СЃС‚Р°С‚РµР№");
     
     
     public static String naimenovanie="";
@@ -38,7 +38,7 @@ public class Vvodjurnala extends JFrame {
     
 	
 	public Vvodjurnala() {
-	    super("Заполнение журнала");
+	    super("Р—Р°РїРѕР»РЅРµРЅРёРµ Р¶СѓСЂРЅР°Р»Р°");
 	    this.setBounds(500,100,500,500);
 	    
 
@@ -87,7 +87,7 @@ public class Vvodjurnala extends JFrame {
             Connection con = DriverManager.getConnection(url, login, password);
             try {
                 Statement stmt = con.createStatement();
-                ResultSet rs = stmt.executeQuery("INSERT INTO TFOND (TIP,NAIMENOVANIE,DATA,STRANICI,IZDATELSTVO,SPISOK_STATEI) VALUES ('журнал','" +  naimenovanie  + "','" +  godizdat  + "','" +  stranic  + "','" +  izdatelstvo  + "','" +  spisok  + "')");
+                ResultSet rs = stmt.executeQuery("INSERT INTO TFOND (TIP,NAIMENOVANIE,DATA,STRANICI,IZDATELSTVO,SPISOK_STATEI) VALUES ('Р¶СѓСЂРЅР°Р»','" +  naimenovanie  + "','" +  godizdat  + "','" +  stranic  + "','" +  izdatelstvo  + "','" +  spisok  + "')");
             
                 rs.close();
                 stmt.close();
@@ -106,7 +106,7 @@ public class Vvodjurnala extends JFrame {
         
         class ButtonEventListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			String message = "Журнал добавлен!";
+			String message = "Р–СѓСЂРЅР°Р» РґРѕР±Р°РІР»РµРЅ!";
 			
                         
                         
@@ -128,7 +128,7 @@ public class Vvodjurnala extends JFrame {
 			 
 			JOptionPane.showMessageDialog(null,
 		    		message,
-		    		"Сообщение",
+		    		"РЎРѕРѕР±С‰РµРЅРёРµ",
 		    	    JOptionPane.PLAIN_MESSAGE);
 		}
 	}

@@ -1,4 +1,4 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 
 import java.sql.Connection;
@@ -12,17 +12,17 @@ public class AppFond extends JFrame {
 	
         
         
-        private JButton button = new JButton("Выполнить");
+        private JButton button = new JButton("Р’С‹РїРѕР»РЅРёС‚СЊ");
         
         
         
         private JTextField input = new JTextField("", 5);
-	private JLabel label1 = new JLabel("  Введите код команды:");
-        private JLabel label2 = new JLabel("    1 - Просмотр зарегистрированных изданий в фонде");
-        private JLabel label3 = new JLabel("    2 - Добавление нового издания в фонд");
-        private JLabel label4 = new JLabel("    3 - Просмотр информации выбранного издания");
-        private JLabel label5 = new JLabel("    4 - Удаление выбранного издания");
-        private JLabel label6 = new JLabel("    5 - Выход");
+	private JLabel label1 = new JLabel("  Р’РІРµРґРёС‚Рµ РєРѕРґ РєРѕРјР°РЅРґС‹:");
+        private JLabel label2 = new JLabel("    1 - РџСЂРѕСЃРјРѕС‚СЂ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РёР·РґР°РЅРёР№ РІ С„РѕРЅРґРµ");
+        private JLabel label3 = new JLabel("    2 - Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ РёР·РґР°РЅРёСЏ РІ С„РѕРЅРґ");
+        private JLabel label4 = new JLabel("    3 - РџСЂРѕСЃРјРѕС‚СЂ РёРЅС„РѕСЂРјР°С†РёРё РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ");
+        private JLabel label5 = new JLabel("    4 - РЈРґР°Р»РµРЅРёРµ РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ");
+        private JLabel label6 = new JLabel("    5 - Р’С‹С…РѕРґ");
         
         
         
@@ -67,14 +67,14 @@ public class AppFond extends JFrame {
                 "        PRIMARY KEY (ZAPIS_ID)\n" + 
                 ");\n" + 
                 " \n" + 
-                "INSERT INTO TFOND (TIP, AVTOR, NAIMENOVANIE, DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('книга','Пушкин','Евгений Онегин','1695 год','450 стр.','Папирус','роман в стихах','О молодом человеке');\n" + 
+                "INSERT INTO TFOND (TIP, AVTOR, NAIMENOVANIE, DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('РєРЅРёРіР°','РџСѓС€РєРёРЅ','Р•РІРіРµРЅРёР№ РћРЅРµРіРёРЅ','1695 РіРѕРґ','450 СЃС‚СЂ.','РџР°РїРёСЂСѓСЃ','СЂРѕРјР°РЅ РІ СЃС‚РёС…Р°С…','Рћ РјРѕР»РѕРґРѕРј С‡РµР»РѕРІРµРєРµ');\n" + 
                 "\n" + 
                 " \n" + 
-                "INSERT INTO TFOND (TIP, AVTOR, NAIMENOVANIE, DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('книга','Лермонтов','Кавказская пленница','1735 год','370 стр.','Мир','роман в стихах','О семейных отношениях');\n" + 
+                "INSERT INTO TFOND (TIP, AVTOR, NAIMENOVANIE, DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('РєРЅРёРіР°','Р›РµСЂРјРѕРЅС‚РѕРІ','РљР°РІРєР°Р·СЃРєР°СЏ РїР»РµРЅРЅРёС†Р°','1735 РіРѕРґ','370 СЃС‚СЂ.','РњРёСЂ','СЂРѕРјР°РЅ РІ СЃС‚РёС…Р°С…','Рћ СЃРµРјРµР№РЅС‹С… РѕС‚РЅРѕС€РµРЅРёСЏС…');\n" + 
                 "\n" + 
                 "\n" + 
                 "\n" + 
-                "INSERT INTO TFOND (TIP, AVTOR, NAIMENOVANIE, DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('книга','Толстой','Война и Мир','1801 год','3750 стр.','Эльбрус','роман','О жизни');\n");
+                "INSERT INTO TFOND (TIP, AVTOR, NAIMENOVANIE, DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('РєРЅРёРіР°','РўРѕР»СЃС‚РѕР№','Р’РѕР№РЅР° Рё РњРёСЂ','1801 РіРѕРґ','3750 СЃС‚СЂ.','Р­Р»СЊР±СЂСѓСЃ','СЂРѕРјР°РЅ','Рћ Р¶РёР·РЅРё');\n");
                 
                 rs.close();
                 stmt.close();
@@ -117,7 +117,7 @@ public class AppFond extends JFrame {
         
         
         public AppFond() {
-	    super("Библиотечный фонд");
+	    super("Р‘РёР±Р»РёРѕС‚РµС‡РЅС‹Р№ С„РѕРЅРґ");
 	    this.setBounds(300,100,500,500);
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -163,7 +163,7 @@ public class AppFond extends JFrame {
     class ButtonEventListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
                     String message = "";
-                    String mess1="Указан неверный номер команды!";
+                    String mess1="РЈРєР°Р·Р°РЅ РЅРµРІРµСЂРЅС‹Р№ РЅРѕРјРµСЂ РєРѕРјР°РЅРґС‹!";
                     
                     message = input.getText();
                 
@@ -216,7 +216,7 @@ public class AppFond extends JFrame {
                         
                         JOptionPane.showMessageDialog(null,
                                 str,
-                                "Зарегистрированные издания в фонде",
+                                "Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹Рµ РёР·РґР°РЅРёСЏ РІ С„РѕРЅРґРµ",
                             JOptionPane.PLAIN_MESSAGE);
                     
                     }     
@@ -227,7 +227,7 @@ public class AppFond extends JFrame {
                     
                     JOptionPane.showMessageDialog(null,
                             mess1,
-                            "Сообщение",
+                            "РЎРѕРѕР±С‰РµРЅРёРµ",
                         JOptionPane.PLAIN_MESSAGE);
             }
     }

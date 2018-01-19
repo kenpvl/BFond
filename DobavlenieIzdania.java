@@ -1,19 +1,19 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class DobavlenieIzdania extends JFrame {
-	private JButton button = new JButton("Выполнить");
+	private JButton button = new JButton("Р’С‹РїРѕР»РЅРёС‚СЊ");
 	private JTextField input = new JTextField("", 5);
-	private JLabel label1 = new JLabel("  Введите тип издания:");
-        private JLabel label2 = new JLabel("    0 - книга");
-        private JLabel label3 = new JLabel("    1 - журнал");
-        private JLabel label4 = new JLabel("    2 - брошюра");
+	private JLabel label1 = new JLabel("  Р’РІРµРґРёС‚Рµ С‚РёРї РёР·РґР°РЅРёСЏ:");
+        private JLabel label2 = new JLabel("    0 - РєРЅРёРіР°");
+        private JLabel label3 = new JLabel("    1 - Р¶СѓСЂРЅР°Р»");
+        private JLabel label4 = new JLabel("    2 - Р±СЂРѕС€СЋСЂР°");
         
         
 	
 	public DobavlenieIzdania() {
-	    super("Добавление нового издания");
+	    super("Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ РёР·РґР°РЅРёСЏ");
 	    this.setBounds(400,100,500,500);
 	   
 

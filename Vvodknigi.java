@@ -1,4 +1,4 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 
 import java.sql.Connection;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import javax.swing.*;
 
 public class Vvodknigi extends JFrame {
-	private JButton button = new JButton("Добавить");
+	private JButton button = new JButton("Р”РѕР±Р°РІРёС‚СЊ");
 	private JTextField input1 = new JTextField("", 5);
     private JTextField input2 = new JTextField("", 5);
     private JTextField input3 = new JTextField("", 5);
@@ -19,14 +19,14 @@ public class Vvodknigi extends JFrame {
     private JTextField input7 = new JTextField("", 5);
         
         
-        private JLabel label1 = new JLabel("  Заполните следующие поля:");
-    private JLabel label2 = new JLabel("    Автор");
-    private JLabel label3 = new JLabel("    Наименование книги");
-    private JLabel label4 = new JLabel("    Год издательства");
-    private JLabel label5 = new JLabel("    Количество страниц");
-    private JLabel label6 = new JLabel("    Издательство");
-    private JLabel label7 = new JLabel("    Жанр книги");
-    private JLabel label8 = new JLabel("    Краткое содержание");
+        private JLabel label1 = new JLabel("  Р—Р°РїРѕР»РЅРёС‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РїРѕР»СЏ:");
+    private JLabel label2 = new JLabel("    РђРІС‚РѕСЂ");
+    private JLabel label3 = new JLabel("    РќР°РёРјРµРЅРѕРІР°РЅРёРµ РєРЅРёРіРё");
+    private JLabel label4 = new JLabel("    Р“РѕРґ РёР·РґР°С‚РµР»СЊСЃС‚РІР°");
+    private JLabel label5 = new JLabel("    РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅРёС†");
+    private JLabel label6 = new JLabel("    РР·РґР°С‚РµР»СЊСЃС‚РІРѕ");
+    private JLabel label7 = new JLabel("    Р–Р°РЅСЂ РєРЅРёРіРё");
+    private JLabel label8 = new JLabel("    РљСЂР°С‚РєРѕРµ СЃРѕРґРµСЂР¶Р°РЅРёРµ");
     
     public static String avtor="";
     public static String naimenovanie="";
@@ -38,7 +38,7 @@ public class Vvodknigi extends JFrame {
     
 	
 	public Vvodknigi() {
-	    super("Заполнение книги");
+	    super("Р—Р°РїРѕР»РЅРµРЅРёРµ РєРЅРёРіРё");
 	    this.setBounds(500,100,500,500);
 	    
 
@@ -87,7 +87,7 @@ public class Vvodknigi extends JFrame {
             Connection con = DriverManager.getConnection(url, login, password);
             try {
                 Statement stmt = con.createStatement();
-                ResultSet rs = stmt.executeQuery("INSERT INTO TFOND (TIP,AVTOR,NAIMENOVANIE,DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('книга','" +  avtor  + "','" +  naimenovanie  + "','" +  godizdat  + "','" +  stranic  + "','" +  izdatelstvo  + "','" +  zhanr  + "','" +  kratkoe  + "')");
+                ResultSet rs = stmt.executeQuery("INSERT INTO TFOND (TIP,AVTOR,NAIMENOVANIE,DATA,STRANICI,IZDATELSTVO,ZHANR_KNIGI,KRATKOE_SODERZHANIE) VALUES ('РєРЅРёРіР°','" +  avtor  + "','" +  naimenovanie  + "','" +  godizdat  + "','" +  stranic  + "','" +  izdatelstvo  + "','" +  zhanr  + "','" +  kratkoe  + "')");
             
                 rs.close();
                 stmt.close();
@@ -106,7 +106,7 @@ public class Vvodknigi extends JFrame {
         
         class ButtonEventListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			String message = "Книга добавлена!";
+			String message = "РљРЅРёРіР° РґРѕР±Р°РІР»РµРЅР°!";
 			
                         
                         
@@ -128,7 +128,7 @@ public class Vvodknigi extends JFrame {
 			 
 			JOptionPane.showMessageDialog(null,
 		    		message,
-		    		"Сообщение",
+		    		"РЎРѕРѕР±С‰РµРЅРёРµ",
 		    	    JOptionPane.PLAIN_MESSAGE);
 		}
 	}

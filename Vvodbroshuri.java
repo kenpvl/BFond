@@ -1,4 +1,4 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 
 import java.sql.Connection;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import javax.swing.*;
 
 public class Vvodbroshuri extends JFrame {
-	private JButton button = new JButton("Добавить");
+	private JButton button = new JButton("Р”РѕР±Р°РІРёС‚СЊ");
 	private JTextField input1 = new JTextField("", 5);
     private JTextField input2 = new JTextField("", 5);
     private JTextField input3 = new JTextField("", 5);
@@ -19,14 +19,14 @@ public class Vvodbroshuri extends JFrame {
     
         
         
-        private JLabel label1 = new JLabel("  Заполните следующие поля:");
+        private JLabel label1 = new JLabel("  Р—Р°РїРѕР»РЅРёС‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РїРѕР»СЏ:");
     
-    private JLabel label2 = new JLabel("    Наименование брошюры");
-    private JLabel label3 = new JLabel("    Год и месяц издательства");
+    private JLabel label2 = new JLabel("    РќР°РёРјРµРЅРѕРІР°РЅРёРµ Р±СЂРѕС€СЋСЂС‹");
+    private JLabel label3 = new JLabel("    Р“РѕРґ Рё РјРµСЃСЏС† РёР·РґР°С‚РµР»СЊСЃС‚РІР°");
     
-    private JLabel label4 = new JLabel("    Издательство");
+    private JLabel label4 = new JLabel("    РР·РґР°С‚РµР»СЊСЃС‚РІРѕ");
     
-    private JLabel label5 = new JLabel("    Краткое описание брошюры");
+    private JLabel label5 = new JLabel("    РљСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ Р±СЂРѕС€СЋСЂС‹");
     
     
     public static String naimenovanie="";
@@ -38,7 +38,7 @@ public class Vvodbroshuri extends JFrame {
     
 	
 	public Vvodbroshuri() {
-	    super("Заполнение брошюры");
+	    super("Р—Р°РїРѕР»РЅРµРЅРёРµ Р±СЂРѕС€СЋСЂС‹");
 	    this.setBounds(500,100,500,500);
 	    
 
@@ -87,7 +87,7 @@ public class Vvodbroshuri extends JFrame {
             Connection con = DriverManager.getConnection(url, login, password);
             try {
                 Statement stmt = con.createStatement();
-                ResultSet rs = stmt.executeQuery("INSERT INTO TFOND (TIP,NAIMENOVANIE,DATA,IZDATELSTVO,KRATKOE_SODERZHANIE) VALUES ('брошюра','" +  naimenovanie  + "','" +  godizdat  + "','" +  izdatelstvo  + "','" +  kratkoe  + "')");
+                ResultSet rs = stmt.executeQuery("INSERT INTO TFOND (TIP,NAIMENOVANIE,DATA,IZDATELSTVO,KRATKOE_SODERZHANIE) VALUES ('Р±СЂРѕС€СЋСЂР°','" +  naimenovanie  + "','" +  godizdat  + "','" +  izdatelstvo  + "','" +  kratkoe  + "')");
             
                 rs.close();
                 stmt.close();
@@ -106,7 +106,7 @@ public class Vvodbroshuri extends JFrame {
         
         class ButtonEventListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			String message = "Брошюра добавлена!";
+			String message = "Р‘СЂРѕС€СЋСЂР° РґРѕР±Р°РІР»РµРЅР°!";
 			
                         
                         
@@ -128,7 +128,7 @@ public class Vvodbroshuri extends JFrame {
 			 
 			JOptionPane.showMessageDialog(null,
 		    		message,
-		    		"Сообщение",
+		    		"РЎРѕРѕР±С‰РµРЅРёРµ",
 		    	    JOptionPane.PLAIN_MESSAGE);
 		}
 	}

@@ -1,4 +1,4 @@
-import java.awt.*;
+п»їimport java.awt.*;
 import java.awt.event.*;
 
 import java.sql.Connection;
@@ -9,9 +9,9 @@ import java.sql.Statement;
 import javax.swing.*;
 
 public class Prosmotr extends JFrame {
-	private JButton button = new JButton("Выполнить");
+	private JButton button = new JButton("Р’С‹РїРѕР»РЅРёС‚СЊ");
 	private JTextField input = new JTextField("", 5);
-	private JLabel label1 = new JLabel("  Введите идентификатор издания:");
+	private JLabel label1 = new JLabel("  Р’РІРµРґРёС‚Рµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РёР·РґР°РЅРёСЏ:");
         
     public static String message;
     public static int s=0;
@@ -19,7 +19,7 @@ public class Prosmotr extends JFrame {
         
 	
 	public Prosmotr() {
-	    super("Просмотр информации выбранного издания");
+	    super("РџСЂРѕСЃРјРѕС‚СЂ РёРЅС„РѕСЂРјР°С†РёРё РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ");
 	    this.setBounds(400,100,500,500);
 	   
 
@@ -76,38 +76,38 @@ public class Prosmotr extends JFrame {
                         tipp = rs.getString("TIP");
                         
                         
-                        if(tipp.equals("книга")){
+                        if(tipp.equals("РєРЅРёРіР°")){
                             
                                 str = rs.getString("ZAPIS_ID") +    "          " + rs.getString("AVTOR")+"          "+rs.getString("NAIMENOVANIE")+"          "+rs.getString("DATA")+"          "+rs.getString("STRANICI")+"          "+rs.getString("IZDATELSTVO")+"          "+rs.getString("ZHANR_KNIGI")+"          "+rs.getString("KRATKOE_SODERZHANIE")+"\n";
                                 
                                 JOptionPane.showMessageDialog(null,
                                         str,
-                                        "Просмотр информации выбранного издания",
+                                        "РџСЂРѕСЃРјРѕС‚СЂ РёРЅС„РѕСЂРјР°С†РёРё РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ",
                                     JOptionPane.PLAIN_MESSAGE);
                             
                             
                             }
                         
-                            if(tipp.equals("журнал")){
+                            if(tipp.equals("Р¶СѓСЂРЅР°Р»")){
                                 
                                     str = rs.getString("NAIMENOVANIE")+"          "+rs.getString("DATA")+"          "+rs.getString("STRANICI")+"          "+rs.getString("IZDATELSTVO")+"          "+rs.getString("SPISOK_STATEI")+"\n";
                                     
                                     JOptionPane.showMessageDialog(null,
                                             str,
-                                            "Просмотр информации выбранного издания",
+                                            "РџСЂРѕСЃРјРѕС‚СЂ РёРЅС„РѕСЂРјР°С†РёРё РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ",
                                         JOptionPane.PLAIN_MESSAGE);
                                 
                                 
                                 }
                         
                         
-                            if(tipp.equals("брошюра")){
+                            if(tipp.equals("Р±СЂРѕС€СЋСЂР°")){
                                 
                                     str = rs.getString("NAIMENOVANIE")+"          "+rs.getString("DATA")+"          "+rs.getString("IZDATELSTVO")+"          "+rs.getString("KRATKOE_SODERZHANIE")+"\n";
                                     
                                     JOptionPane.showMessageDialog(null,
                                             str,
-                                            "Просмотр информации выбранного издания",
+                                            "РџСЂРѕСЃРјРѕС‚СЂ РёРЅС„РѕСЂРјР°С†РёРё РІС‹Р±СЂР°РЅРЅРѕРіРѕ РёР·РґР°РЅРёСЏ",
                                         JOptionPane.PLAIN_MESSAGE);
                                 
                                 
@@ -145,7 +145,7 @@ public class Prosmotr extends JFrame {
                 public void actionPerformed(ActionEvent e) {
 			
 			
-			String mess2="Указанный идентификатор не существует в системе!";
+			String mess2="РЈРєР°Р·Р°РЅРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РІ СЃРёСЃС‚РµРјРµ!";
                         
                         
                         s=0;
@@ -165,7 +165,7 @@ public class Prosmotr extends JFrame {
                 
                     JOptionPane.showMessageDialog(null,
                             mess2,
-                            "Сообщение",
+                            "РЎРѕРѕР±С‰РµРЅРёРµ",
                         JOptionPane.PLAIN_MESSAGE);
                 
                 }
